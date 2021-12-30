@@ -1,6 +1,6 @@
 ```css
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600&family=Questrial&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600;700;800&family=Questrial&family=Roboto:wght@400;700;900&display=swap');
 
 :root {
   --box-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 button {
