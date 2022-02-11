@@ -32,5 +32,31 @@
 
 	union		: 	(string | number)
 
+	type Alias 	:	type [any name] = [any type]    // create your own custom type
+				type Combinable = 'as-number' | 'as-text'
+	
+	unknown		: 	similar to 'any' however if you want to pass unknown type variable to a typed variable, you must do "if (typeof sth === 'string')" 
 
+	void		:	it return nothing or undefined
+	
+	never		: 	will never product any value. eg. function sth(){
+									throw new Error('sth')
+									}
+				or infinite loop
+```
+
+``` typescript
+
+	const add = (n1: number, n2: number): number => {
+  		return n1 + n2
+	}
+
+
+	let combineValues: Function 	//Function is a special type in typescript
+	combineValues = add
+
+		or
+
+	let combineValues: (n1: number, n2: number) => number // dont get confused with function as type VS return type from function
+	combineValues = add
 ```
