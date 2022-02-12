@@ -18,7 +18,8 @@ write this in the tsconfig.json
 "rootDir : "./src
 ```
 
-```you don't want TypeScript to compile to JavaScript in the face of errors, you can use the "noEmitOnError" option
+```typescript
+you don't want TypeScript to compile to JavaScript in the face of errors, you can use the "noEmitOnError" option
 ```
 
 
