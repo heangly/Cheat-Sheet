@@ -60,3 +60,52 @@
 	let combineValues: (n1: number, n2: number) => number // dont get confused with function as type VS return type from function
 	combineValues = add
 ```
+
+
+Interface
+
+```typescript
+	interface Person {
+  		readonly name: string
+  		age?: number	//age is optional, so u can implement it or not implement it
+
+  		greet(phrase: string): void
+	}
+
+	(this is similar to type alias)
+
+	const user1: Person = {
+  		name: 'Heang',
+  		age: 29,
+  		greet(phrase: string) {
+    			console.log(`${phrase} ${this.name}`)
+  		}
+	}
+
+	(use interface for class)
+	
+	class Student implements Person{
+		constructor(private name: string, private age: number){}
+		
+		greet(phrase: string){
+			//do sth
+		}
+	}
+
+	(interface never have concrete implementation while "abstract class" may or may not have)
+	
+	(interface can also extends from other interface)
+
+	interface A extends B{
+		//do sth
+	}
+
+	(interface as function type)
+
+	interface AddFn {
+		(a: number, b: number): number
+	}
+
+```
+
+
