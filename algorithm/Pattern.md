@@ -20,7 +20,15 @@
 ```
 
 ``` javascript
-# accumulate path value
+# Accumulate path value
 	-> dynamic programming top down OR bottom up
 	-> for DP, always try to think of sub problems
+```
+
+``` javascript
+# Either bottom, right | Either 1 , 2
+	-> do dfs
+	-> dfs(firstOption) + dfs(secondOption)
+	-> think of it like a root tree branching down 2 sub branch at each call stack
+	-> caching the repetitive element to optimize time complexity
 ```
