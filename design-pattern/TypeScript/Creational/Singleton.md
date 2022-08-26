@@ -49,15 +49,34 @@ For example, maybe you want to keep only one instance of a particular class simp
 ```code
 	export class Singleton {
 		// Store the singleton instance (cached)
-		private static instance: Singleton
+		** private static instance: Singleton **
 
 		// Prevents creation of new instances
 		private constructor(){
-			
+
 		}
 	}
 ```
+### Step3 - single access
+Lastly, you want one way to access the cached instance of the Singleton from this class.
 
+```code
+	export class Singleton {
+		// Stores the singleton instance
+		private static instance: Singleton;
+
+		// Prevents creation of new instances
+		private constructor() {}
+
+			// Method to retrieve instance
+			static getInstance() {
+				if (!Singleton.instance) {
+					Singleton.instance = new Singleton();
+				}
+			return Singleton.instance;
+		}
+	}
+```
 
 
 
