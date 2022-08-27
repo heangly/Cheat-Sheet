@@ -78,7 +78,21 @@ Lastly, you want one way to access the cached instance of the Singleton from thi
 	}
 ```
 
+# Modern Implmentations
 
+### Using module resolution Singletons
+
+```code
+	class ApiServiceSingleton {
+
+	}
+```
+
+```code
+	
+	export default new ApiSericeSingleton()
+	
+```
 
 
 
