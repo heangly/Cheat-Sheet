@@ -4,4 +4,4 @@
 
 ### UML
 
-			![Prototype UML](Prototype-uml.png "Prototype UML")
+![Prototype UML](./Prototype-uml.png)
