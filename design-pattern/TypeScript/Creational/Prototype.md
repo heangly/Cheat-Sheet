@@ -4,4 +4,30 @@
 
 ### UML
 
-![Prototype UML](./Prototype-uml.png)
+![Prototype UML](./img/Prototype-uml.png)
+
+
+# Classic implementation
+
+```javascript
+	
+	interface HeroPrototype {
+		clone(): HeroPrototype
+	}
+	
+```
+
+```javascript
+	
+	class Wizard implements HeroPrototype {
+		private spells: string[]
+		private health: number
+
+		constructor(private name: string){
+			this.spells = []
+			this.health = 100
+		}
+
+	}
+	
+```
