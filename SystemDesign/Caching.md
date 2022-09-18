@@ -8,7 +8,7 @@ Caches are often used to store responses to network requests as well as results 
 
 Note that data in a cache can become **stale** if the main source of truth for that data (i.e., the main database behind the cache) get updated and the cache doesn't.
 
-#### Cahe Hit
+#### Cache Hit
 
 When requested data could have been found in a cache.
 
